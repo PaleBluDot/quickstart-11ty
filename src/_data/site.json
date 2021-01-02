@@ -2,7 +2,8 @@
 	"author": {
 		"name":	"Pavel Sanchez",
 		"email": "info@pavelsanchez.com",
-		"website": "pavelsanchez.com"
+		"website": "pavelsanchez.com",
+		"twitter": "psdbk"
 	},
 	"description": "A quickstart template for rapidly putting up website with 11ty and Gulp.",
 	"logo": "",
@@ -19,7 +20,5 @@
 	"ogType": "website",
 	"repo": "https://github.com/PaleBluDot/quickstart.git",
 	"title": "PSD Quickstart",
-	"url": "https://pavelsanchez.com"
+	"url": "https://psd-boilerplate-11ty.netlify.app"
 }
-
-

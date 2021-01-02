@@ -1,9 +1,26 @@
-<!-- NEEDED META -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<!-- GOOGLE SHARE -->
 <meta name="description" content="{{ description }}">
 <meta name="author" content="{{ pkg.author }}">
 <meta name="generator" content="{{ pkg.version }}">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+
+{% if site.author.twitter %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter | replace('@', '') }}" />
+{% endif %}
+
+{% if description %}
+  <meta name="description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+{% endif %}
+
+{% if featuredImg %}
+  <meta property="og:image" content="{{ shareImg }}" />
+  <meta name="twitter:image" content="{{ shareImg }}" />
+  <meta property="og:image:alt" content="Page image for {{ site.title }}" />
+  <meta name="twitter:image:alt" content="Page image for {{ site.title }}" />
+{% endif %}
