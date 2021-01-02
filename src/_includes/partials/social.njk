@@ -1,0 +1,32 @@
+{% set currentURL = site.url + page.url %}
+
+{# <!-- TWITTER -->
+<meta name="twitter:card" content="{{ description }}">
+<meta name="twitter:site" content="{{ currentURL }}">
+<meta name="twitter:creator" content="{{ author }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ featuredImg }}">
+
+<!-- FACEBOOK -->
+<meta property="og:url" content="{{ currentURL }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="{{ site.ogType }}">
+<meta property="og:image" content="{{ featuredImg | url }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500"> #}
+
+{% if description %}
+  <meta name="description" content="{{ description }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
+{% endif %}
+
+{% if featuredImg %}
+  <meta property="og:image" content="{{ featuredImg }}" />
+  <meta name="twitter:image" content="{{ featuredImg }}" />
+  <meta property="og:image:alt" content="Page image for {{ site.title }}" />
+  <meta name="twitter:image:alt" content="Page image for {{ site.title }}" />
+{% endif %}

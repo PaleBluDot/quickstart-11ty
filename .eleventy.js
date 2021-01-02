@@ -1,5 +1,6 @@
-module.exports = function(config) {
-	config.addPassthroughCopy('src/img');
+module.exports = function(evelentyConfig) {
+	// PASSTHROUGH COPY
+	evelentyConfig.addPassthroughCopy({"src/img": "media"});
 
 	return {
 		dir: {
@@ -7,7 +8,6 @@ module.exports = function(config) {
 			output: 'build',
 			data: '_data',
 		},
-		templateFormats: ['html', 'njk', 'md', '11ty.js', 'jpg', 'png'],
 		passthroughFileCopy: true,
 	};
 };
