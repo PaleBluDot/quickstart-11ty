@@ -1,0 +1,25 @@
+{
+	"author": {
+		"name":	"Pavel Sanchez",
+		"email": "info@pavelsanchez.com",
+		"website": "pavelsanchez.com"
+	},
+	"description": "A quickstart template for rapidly putting up website with 11ty and Gulp.",
+	"logo": "",
+	"meta": {
+		"application-name": "Pavel Sanchez Designs",
+		"author": "Pavel Sanchez",
+		"character-set": "UTF-8",
+		"content-type": "text/html",
+		"description": "My Personal Website.",
+		"keyword": "HTML, CSS, JS, SSG, 11ty",
+		"theme-color": "#000000",
+		"viewport": "width=device-width, initial-scale=1.0"
+	},
+	"ogType": "website",
+	"repo": "https://github.com/PaleBluDot/quickstart.git",
+	"title": "PSD Quickstart",
+	"url": "https://pavelsanchez.com"
+}
+
+

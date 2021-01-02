@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file imports all the sass files
+// -----------------------------------------------------------------------------
+
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import '1. helpers/_helpers-dir';
+
+// 2. Vendors
+@import '2. vendor/_vendor-dir.scss';
+
+// 3. Base stuff
+@import '3. base/_base-dir';
+
+// 4. Layout-related sections
+@import '4. layout/_layout-dir';
+
+// 5. Components
+@import '5. components/_component-dir';
+
+// 6. Page-specific styles
+@import '6. pages/_pages-dir';
+
+// 7. Themes
+@import '7. themes/_themes-dir';

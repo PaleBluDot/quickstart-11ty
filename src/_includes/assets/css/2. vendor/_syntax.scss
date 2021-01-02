@@ -1,0 +1,175 @@
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #f1f1f1;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: $code-font-stack;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+	font-size: 14px;
+	tab-size: 4;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	background: #161616;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+	padding: 0.5em;
+	border-radius: 0.3em;
+}
+
+code {
+	background: #161616;
+	padding: 0.2em 0.3em;
+	border-radius: 0.3em;
+	color: #df9e9e;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7c7c7c;
+}
+
+.token.punctuation {
+	color: #c5c8c6;
+}
+
+.namespace {
+	opacity: 0.7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+	color: #3e87ca;
+}
+
+.token.class-name {
+	color: #ffffb6;
+	text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+	color: #99cc99;
+}
+
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.number {
+	color: #ff73fd;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #d5f15a;
+}
+
+.token.variable {
+	color: #c6c5fe;
+}
+
+.token.operator {
+	color: #ededed;
+}
+
+.token.entity {
+	color: #ffffb6;
+	/* text-decoration: underline; */
+}
+
+.token.url {
+	color: #3e87ca;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #87c38a;
+}
+
+.token.atrule,
+.token.attr-value {
+	color: #f9ee98;
+}
+
+.token.function {
+	color: #e6846b;
+}
+
+.token.regex {
+	color: #e9c062;
+}
+
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+	border-right-color: #1f2932;
+}
+
+.line-numbers-rows > span:before {
+	color: #2c3847;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight {
+	background: rgba(10, 163, 112, 0.2);
+	background: -webkit-linear-gradient(
+		left,
+		rgba(10, 163, 112, 0.2) 70%,
+		rgba(10, 163, 112, 0)
+	);
+	background: linear-gradient(
+		to right,
+		rgba(10, 163, 112, 0.2) 70%,
+		rgba(10, 163, 112, 0)
+	);
+}

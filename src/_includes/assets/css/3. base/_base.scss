@@ -1,0 +1,40 @@
+// --------------------This file contains very basic styles.
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: $red;
+	text-decoration: none;
+	transition: all 0.5 ease-in-out;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	margin-left: 4rem;
+}
+
+li {
+	margin-bottom: 1rem;
+	list-style-type: square;
+}

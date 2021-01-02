@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include "components/head.njk" %}
+	</head>
+	<body>
+		<section class="wrapper">
+			<header class="header">
+				{% include "components/header.njk" %}
+			</header>
+
+			<main class="content">
+				{{ content | safe }}
+			</main>
+
+			<footer class="footer">
+				{% include "components/footer.njk" %}
+			</footer>
+		</section>
+		{% include "components/scripts.njk" %}
+	</body>
+</html>
