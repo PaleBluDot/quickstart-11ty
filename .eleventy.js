@@ -1,6 +1,6 @@
 module.exports = function(evelentyConfig) {
 	// PASSTHROUGH COPY
-	evelentyConfig.addPassthroughCopy({"src/img": "media"});
+	evelentyConfig.addPassthroughCopy({"src/assets/img": "media"});
 
 	return {
 		dir: {

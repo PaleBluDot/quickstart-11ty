@@ -8,7 +8,6 @@ A starting templatle for quickly building websites.
 
 - [ ] Design
 - [ ] Storybook
-  - [ ] Add Components
 - [ ] StyleGuide
   - [ ] Button
   - [ ] Colors
