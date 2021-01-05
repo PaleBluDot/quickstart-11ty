@@ -1,17 +1,17 @@
 // --------------------This file contains all application-wide Sass mixins.
 
 @mixin bp($point) {
-	@if $point == narrow {
-		@media #{$bp-narrow} {
-			@content;
-		}
-	} @else if $point == mid {
-		@media #{$bp-mid} {
-			@content;
-		}
-	} @else if $point == wide {
-		@media #{$bp-wide} {
-			@content;
-		}
-	}
+  @if $point == narrow {
+    @media #{$bp-narrow} {
+      @content;
+    }
+  } @else if $point == mid {
+    @media #{$bp-mid} {
+      @content;
+    }
+  } @else if $point == wide {
+    @media #{$bp-wide} {
+      @content;
+    }
+  }
 }

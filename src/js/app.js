@@ -1,5 +1,5 @@
-import App from './script.js'
+import App from './script.js';
 
 const app = new App();
 
-console.log("Pavel");
+console.log('Pavel');

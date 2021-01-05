@@ -7,6 +7,6 @@ featuredImg: /media/blackstar-banner.jpg
 
 ## {{title}}
 
-**Current URL:** `{{site.url}}{{page.url}}`
+**Current URL:**`{{site.url}}{{page.url}}`
 
 <img src="{{featuredImg}}">

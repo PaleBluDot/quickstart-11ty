@@ -3,54 +3,50 @@ const clean = require('gulp-clean');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const concat = require("gulp-concat");
-const sourcemaps = require("gulp-sourcemaps");
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
 // Configuration
 const project = {
-	src: './src',
-	build: './build'
+  src: './src',
+  build: './build',
 };
 
 // cleanup the build output
-gulp.task('clean', function() {
-	return gulp.src(project.build, { read: false }).pipe(clean());
+gulp.task('clean', function () {
+  return gulp.src(project.build, { read: false }).pipe(clean());
 });
 
 // Compile SCSS files to CSS
-gulp.task('styles', function() {
-	return gulp
-		.src(project.src + '/css/main.scss')
-		.pipe(sourcemaps.init())
-		.pipe(
-			sass({
-				outputStyle: 'expanded'
-			}).on('error', sass.logError)
-		)
-		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest(project.build + '/css'));
+gulp.task('styles', function () {
+  return gulp
+    .src(project.src + '/css/main.scss')
+    .pipe(sourcemaps.init())
+    .pipe(
+      sass({
+        outputStyle: 'expanded',
+      }).on('error', sass.logError)
+    )
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(project.build + '/css'));
 });
 
 // Watch for SCSS changes
-gulp.task('watch', function() {
-	gulp
-		.watch(
-			project.src + '/',
-			gulp.parallel('styles', 'scripts')
-		)
-		.on('change', browserSync.reload);
+gulp.task('watch', function () {
+  gulp.watch(project.src + '/', gulp.parallel('styles', 'scripts')).on('change', browserSync.reload);
 });
 
 // Uglify our javascript files into one.
-gulp.task("scripts", function () {
-  return gulp.src(project.src + '/js/app.js')
-		.pipe(sourcemaps.init())
-		.pipe(babel())
-		.pipe(concat("app.bundle.js"))
-		.pipe(uglify())
-		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest(project.build + '/js'));
+gulp.task('scripts', function () {
+  return gulp
+    .src(project.src + '/js/app.js')
+    .pipe(sourcemaps.init())
+    .pipe(babel())
+    .pipe(concat('app.bundle.js'))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(project.build + '/js'));
 });
 
 // Compile the assets to the correct destination

@@ -1,22 +1,14 @@
-trailingComma: "es5"
-printWidth: 120
-useTabs: true
-tabWidth: 2
-semi: true
-singleQuote: false
-jsxSingleQuote: true
-jsxBracketSameLine: true
+# prettierrc
 bracketSpacing: true
+endOfLine: lf
+printWidth: 120
+semi: true
+tabWidth: 2
+useTabs: false
 overrides:
-  - files:
-      - "*.md"
-      - "*.yaml"
-    options:
-      useTabs: false
-      tabWidth: 2
   - files: "*.html"
     options:
-      printWidth: 400
+      printWidth: 300
   - files: "*.js"
     options:
       singleQuote: true
