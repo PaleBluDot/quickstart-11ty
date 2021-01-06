@@ -1,20 +1,18 @@
 // --------------------This file contains all application-wide Sass variables.
 
 /// Font Families
-$headline-font-stack: "Bangers", cursive;
-$text-font-stack: "Open Sans", "Helvetica", "Arial", sans-serif !default;
-$code-font-stack: "Fira Code", "Courier New", monospace !default;
-$link-font-stack: "Kaushan Script", cursive;
-
-/// Container Max Width
-$max-width: 1180px !default;
-$min-width: 368px !default;
+$headline-fonts: "Bangers", cursive !default;
+$text-fonts: "Open Sans", "Helvetica", "Arial", sans-serif !default;
+$code-fonts: "Fira Code", "Courier New", monospace !default;
+$link-fonts: "Kaushan Script", cursive !default;
 
 // Breakpoints
-$bp-small: "min-width: 600px";
-$bp-medium: "min-width: 768px";
-$bp-large: "min-width: 1024px";
-$bp-wide: "min-width: 1200px";
+$bp-xsmall: "min-width: 57.6rem" !default;
+$bp-small: "min-width: 60rem" !default;
+$bp-medium: "min-width: 76.8rem" !default;
+$bp-large: "min-width: 99.2rem" !default;
+$bp-xlarge: "min-width: 120rem" !default;
+$bp-xxlarge: "min-width: 140rem" !default;
 
 // Color Names
 $white: #ffffff !default;
