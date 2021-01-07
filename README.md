@@ -33,3 +33,4 @@ A starting templatle for quickly building websites.
   - [ ] Contentful
   - [ ] Google Sheets
   - [ ] Airtable
+npm un node-sass && npm i node-sass -D

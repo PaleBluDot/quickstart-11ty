@@ -62,7 +62,7 @@ gulp.task('jsmin', function () {
     .pipe(babel())
     .pipe(concat('app.bundle.js'))
     .pipe(uglify())
-    .pipe(rename('app.bundlemin.js'))
+    .pipe(rename('app.bundle.min.js'))
     .pipe(gulp.dest(project.build + '/js'));
 });
 
