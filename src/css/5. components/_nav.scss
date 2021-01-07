@@ -1,0 +1,19 @@
+aside#sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+nav {
+  margin-top: 3rem;
+  ul {
+    margin-inline-start: 2rem;
+  }
+}
+
+.menuLogo {
+  font-size: 1.8rem;
+  margin-right: 0;
+}

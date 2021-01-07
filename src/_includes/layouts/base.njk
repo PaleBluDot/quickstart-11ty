@@ -6,9 +6,10 @@
 	</head>
 	<body>
 		<section class="wrapper">
-			<header class="header">
-				{% include "components/header.njk" %}
-			</header>
+
+			<aside id="sidebar" class="sidebar">
+				{% include "components/sidebar.njk" %}
+			</aside>
 
 			<main class="content">
 				{{ content | safe }}

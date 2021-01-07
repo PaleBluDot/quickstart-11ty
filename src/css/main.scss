@@ -1,18 +1,20 @@
-/* --------------------------------------------------------
-Style Sheet for PSD Projects
-
-version: 0.1.1
-last modified: 2021.01.06 by Pavel Sanchez
-author: Pavel Sanchez
-email: pavel@bluedot.dev
-website: http://bluedot.dev
-----------------------------------------------------------*/
+/*
+**---------------------------------
+***	Project: PSD Starter
+***	version: 0.1.1
+***	last modified: 2021.01.06
+***	author: Pavel Sanchez
+***	email: pavel@bluedot.dev
+***	website: http://bluedot.dev
+**---------------------------------
+*/
 
 @charset 'UTF-8';
 
-/* ---------------------------------------------------------
-**	 CSS TABLE OF CONTENTS
-***  ---------------------   
+/*
+**---------------------------------
+***	 CSS TABLE OF CONTENTS
+***--------------------------------
 ***  1 - Reset
 ***  2 - Fonts
 ***  3 - Globals
@@ -21,8 +23,9 @@ website: http://bluedot.dev
 ***  6 - Body
 ***  	6.1 - Sliders
 ***  	6.2 - Imagery
-**   7 - Footer
-* ---------------------------------------------------------*/
+***  7 - Footer
+**---------------------------------
+*/
 
 // 1. Configuration and helpers
 @import "1. helpers/_helpers-dir";

@@ -1,2 +1,6 @@
 <!-- STYLESHEETS  -->
-<link rel="stylesheet" href="/css/main.css" />
+{% if project.environment == "prod" %}
+<link rel="stylesheet" href="css/main.min.css" />
+{% else %}
+<link rel="stylesheet" href="/css/main.css">
+{% endif %}

@@ -1,7 +1,3 @@
-class App {
-	constructor {
-		console.info('App Initialized')
-	}
-}
+const hello () => console.log("connected");
 
-export default App;
+export default hello();

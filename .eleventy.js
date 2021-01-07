@@ -1,6 +1,12 @@
-module.exports = function (evelentyConfig) {
-  // PASSTHROUGH COPY
-  evelentyConfig.addPassthroughCopy({ 'src/assets/img': 'media' });
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addPassthroughCopy({ 'src/assets/img': 'media' });
 
   return {
     dir: {

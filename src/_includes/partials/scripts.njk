@@ -1,2 +1,6 @@
-<script src="https://kit.fontawesome.com/6941b4d6af.js" crossorigin="anonymous"></script>
+<!-- SCRIPTS  -->
+{% if project.environment == "prod" %}
+<script type="text/javascript" src="/js/app.bundle.min.js"></script>
+{% else %}
 <script type="text/javascript" src="/js/app.bundle.js"></script>
+{% endif %}

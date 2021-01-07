@@ -14,16 +14,16 @@
       @content;
     }
   } @else if $point == larger {
-	@media #{$bp-large} {
-	  @content;
-	}
+    @media #{$bp-large} {
+      @content;
+    }
   } @else if $point == xlarge {
-	@media #{$bp-xlarge} {
-	  @content;
-	}
+    @media #{$bp-xlarge} {
+      @content;
+    }
   } @else if $point == xxlarge {
-	@media #{$bp-xxlarge} {
-	  @content;
-	}
+    @media #{$bp-xxlarge} {
+      @content;
+    }
   }
 }
