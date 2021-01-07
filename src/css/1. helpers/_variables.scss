@@ -7,12 +7,12 @@ $code-fonts: "Fira Code", "Courier New", monospace !default;
 $link-fonts: "Kaushan Script", cursive !default;
 
 // Breakpoints
-$bp-xsmall: "min-width: 57.6rem" !default;
-$bp-small: "min-width: 60rem" !default;
-$bp-medium: "min-width: 76.8rem" !default;
-$bp-large: "min-width: 99.2rem" !default;
-$bp-xlarge: "min-width: 120rem" !default;
-$bp-xxlarge: "min-width: 140rem" !default;
+$xsmall: "min-width: 57.6rem" !default;
+$small: "min-width: 60rem" !default;
+$medium: "min-width: 76.8rem" !default;
+$large: "min-width: 99.2rem" !default;
+$xlarge: "min-width: 120rem" !default;
+$xxlarge: "min-width: 140rem" !default;
 
 // Color Names
 $white: #ffffff !default;

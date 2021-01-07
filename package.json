@@ -12,15 +12,12 @@
     "url": "https://github.com/PaleBluDot/quickstart.git"
   },
   "scripts": {
-    "start": "cross-env ELEVENTY_ENV=dev concurrently \"netlify dev\" \"gulp dev\"",
+    "start": "cross-env ELEVENTY_ENV=dev concurrently \"npm run dev\" \"gulp dev\"",
     "assets": "gulp build",
     "dev": "eleventy --watch",
     "clean": "rm -r build",
-    "storybook": "start-storybook -p 6006",
     "prettier": "npx prettier --write .",
-    "build": "npm run build:11 && npm run assets",
-    "build:sb": "build-storybook",
-    "build:11": "cross-env ELEVENTY_ENV=prod eleventy"
+    "build": "cross-env ELEVENTY_ENV=dev eleventy && npm run assets"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
