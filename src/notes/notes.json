@@ -1,6 +1,11 @@
 {
   "tags": ["notes"],
-  "layout": "layouts/base.njk",
+  "layout": "base",
   "path": "notes",
-  "permalink": "./{{path}}/{{ title | slug }}/index.html"
+  "permalink": "./{{path}}/{{ title | slug }}/index.html",
+  "eleventyNavigation": [
+    {
+      "parent": "Notes"
+    }
+  ]
 }

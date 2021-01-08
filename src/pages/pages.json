@@ -1,6 +1,6 @@
 {
   "tags": ["pages"],
-  "layout": "layouts/base.njk",
+  "layout": "base",
   "path": "page",
   "permalink": "./{{path}}/{{ title | slug }}/index.html"
 }

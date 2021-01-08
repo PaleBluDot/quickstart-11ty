@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		{% include "partials/head.njk" %}
-		<title>title</title>
-	</head>
-	<body>
-		<section class="wrapper">
+ <head>
+  {% include "partials/head.njk" %}
+  <title>title</title>
+ </head>
+ <body>
+  <section class="wrapper">
+   <aside id="sidebar" class="sidebar">
+    {% include "components/sidebar.njk" %}
+   </aside>
 
-			<aside id="sidebar" class="sidebar">
-				{% include "components/sidebar.njk" %}
-			</aside>
+   <main class="content">
+    <header id="mobileHeader">{% include "components/header.njk" %}</header>
+    {{ content | safe }}
+   </main>
 
-			<main class="content">
-				{{ content | safe }}
-			</main>
-
-			<footer class="footer">
-				{% include "components/footer.njk" %}
-			</footer>
-		</section>
-		{% include "partials/scripts.njk" %}
-	</body>
+   <footer class="footer">{% include "components/footer.njk" %}</footer>
+  </section>
+  {% include "partials/scripts.njk" %}
+ </body>
 </html>

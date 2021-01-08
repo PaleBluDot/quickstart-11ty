@@ -2,7 +2,9 @@
   grid-area: main;
   background: $white;
   color: $black;
-  padding: 5rem 5rem;
-  max-width: 140rem;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-

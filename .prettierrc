@@ -8,6 +8,10 @@ overrides:
   - files: "*.html"
     options:
       printWidth: 300
+  - files: "*.njk"
+    options:
+      tabWidth: 1
+      printWidth: 80
   - files: "*.js"
     options:
       singleQuote: true
