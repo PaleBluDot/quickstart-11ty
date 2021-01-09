@@ -14,6 +14,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 
+  eleventyConfig.addPairedShortCode('logoMarkURL', (content) => {
+    console.log(content);
+    return content;
+  })
+
   return {
     htmlTemplateEngine: 'njk',
     templateFormats: ['html', 'njk', 'md', '11ty.js'],

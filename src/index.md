@@ -1,8 +1,8 @@
 ---
 layout: "base"
-title: 11ty Boilertplate!
+title: 11ty Boilerplate!
 description: A starting template using 11ty.
-featImg: /media/blackstar-banner.jpg
+featImg: /project52/wynwood-art-wall.jpg
 ---
 
-<img src="{{featImg}}">
+<img src="{{cloudinary.logomarkUrl}}{{featImg}}">
