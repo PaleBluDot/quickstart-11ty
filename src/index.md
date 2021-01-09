@@ -6,4 +6,3 @@ featImg: /media/blackstar-banner.jpg
 ---
 
 <img src="{{featImg}}">
-<i class="fas fa-thumbs-up fa-5x"></i>
