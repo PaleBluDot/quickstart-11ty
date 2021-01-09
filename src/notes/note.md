@@ -13,7 +13,7 @@ tags:
 <!-- Markdown Template -->
 
 ```js
-function myFunction() {
+myFunction () => {
   return true;
 }
 ```

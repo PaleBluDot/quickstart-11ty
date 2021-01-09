@@ -1,7 +1,7 @@
 {
   "name": "11ty-boilerplate",
   "version": "0.0.4",
-  "description": "A quickstart template for rapidly putting up website with 11ty and Gulp.",
+  "description": "A quick start template for rapidly putting up website with 11ty and Gulp.",
   "main": "eleventy.js",
   "author": "Pavel Sanchez",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "dev": "eleventy --serve",
     "clean": "rm -r build",
     "prettier": "npx prettier --write .",
-    "build": "cross-env ELEVENTY_ENV=dev eleventy && npm run assets"
+    "build": "cross-env ELEVENTY_ENV=prod eleventy && npm run assets"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
