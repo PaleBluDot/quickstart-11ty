@@ -2,7 +2,9 @@
 title: Playground
 description: This page is used to test out things in the center of the page
 eleventyNavigation:
- key: Playground
+  key: Playground
 ---
 
-<p>{{ description }}</p>
+<section class="content">
+  <p>{{ description }}</p>
+</section>

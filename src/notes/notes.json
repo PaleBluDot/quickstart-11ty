@@ -3,9 +3,7 @@
   "layout": "base",
   "path": "notes",
   "permalink": "./{{path}}/{{ title | slug }}/index.html",
-  "eleventyNavigation": [
-    {
-      "parent": "Notes"
-    }
-  ]
+  "eleventyNavigation": {
+    "parent": "Notes"
+  }
 }

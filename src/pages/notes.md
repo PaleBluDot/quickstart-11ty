@@ -5,10 +5,6 @@ eleventyNavigation:
   key: Notes
 ---
 
-<p>{{description}}</p>
-
-<ul>
-  {%- for tip in collections.tips -%}
-    <li><a href="{{ tip.url }}">{{ tip.data.title }}</a></li>
-  {%- endfor -%}
-</ul>
+<section class="content">
+  <p>{{description}}</p>
+</section>
