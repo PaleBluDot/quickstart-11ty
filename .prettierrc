@@ -6,6 +6,9 @@ tabWidth: 2
 semi: true
 bracketSpacing: true
 overrides:
+  - files: "*.njk"
+    options:
+      printWidth: 10
   - files: "*.js"
     options:
       singleQuote: true
