@@ -6,6 +6,7 @@
 /build
 .netlify
 package-lock.json
+.cache
 
 # secrets and errors
 .env

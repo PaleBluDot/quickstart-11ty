@@ -1,11 +1,14 @@
-bracketSpacing: true
+trailingComma: "es5"
 endOfLine: lf
-printWidth: 120
-semi: true
-tabWidth: 2
+printWidth: 80
 useTabs: false
+tabWidth: 2
+semi: true
+bracketSpacing: true
 overrides:
-  - files: "*.njk"
+  - files: "*.js"
     options:
-      tabWidth: 1
-      printWidth: 80
+      singleQuote: true
+      jsxSingleQuote: true
+      jsxBracketSameLine: true
+      spacingbracketSpacing: true
