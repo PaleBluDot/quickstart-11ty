@@ -1,0 +1,41 @@
+/// Font Families
+$headline-fonts: "Catseye", cursive !default;
+$text-fonts: "Open Sans", "Helvetica", "Arial", sans-serif !default;
+$code-fonts: "Fira Code", "Courier New", monospace !default;
+$link-fonts: "Kaushan Script", cursive !default;
+
+// Breakpoints
+$xsmall: "576px" !default;
+$small: "600px" !default;
+$medium: "768px" !default;
+$large: "992px" !default;
+$xlarge: "1200px" !default;
+$xxlarge: "1800px" !default;
+
+// Color Names
+$white: #ececec !default;
+$grey: #dddddd !default;
+$black: #222222 !default;
+$dark: #171717 !default;
+$blue: #1a6891 !default;
+$red: #912930 !default;
+$sun: #e9ec38 !default;
+
+:root {
+  --body-bg: #{$black};
+  --menu-bg: #{$dark};
+  --text-color: #{$white};
+  --primary: #{$blue};
+  --secondary: #{$red};
+  --sun: #{$sun};
+
+  --font-size: 1.8rem;
+  --main-font: #{$text-fonts};
+  --headline-font: #{$headline-fonts};
+  --code-font: #{$code-fonts};
+  --link-font: #{$link-fonts};
+
+  --icon-size: 2rem;
+  --icon-color: $sun;
+  --radius: 0.5rem;
+}

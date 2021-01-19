@@ -1,0 +1,35 @@
+aside.sidebar {
+  background: var(--menu-bg);
+  opacity: 0.97;
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  transform: translateY(-100vh);
+
+  &.menu-open {
+    height: 90vh;
+    position: absolute;
+    transform: translateY(10vh);
+  }
+}
+
+nav.menu {
+  margin-top: 3rem;
+  font-weight: 900;
+}
+
+.menu-bar {
+  background: var(--menu-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  .page-title {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  color: var(--sun);
+}

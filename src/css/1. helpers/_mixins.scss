@@ -1,5 +1,3 @@
-// --------------------This file contains all application-wide Sass mixins.
-
 @mixin bp($point) {
   @if $point == xsmall {
     @media (max-width: #{$xsmall}) {

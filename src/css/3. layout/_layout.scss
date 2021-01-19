@@ -1,0 +1,28 @@
+body {
+  background-color: var(--body-bg);
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-family: $text-fonts;
+  display: grid;
+  grid-template-rows: 10vh auto 10vh;
+  grid-template-areas:
+    "menu"
+    "main"
+    "footer";
+
+  @include bp(small) {
+    grid-template-rows: 6vh auto 10vh;
+  }
+  @include bp(medium) {
+    grid-template-rows: 6vh auto 10vh;
+  }
+}
+
+body.light-mode {
+  --body-bg: #{$white};
+  --menu-bg: #{$grey};
+  --text-color: #{$black};
+  --sun: #{$dark};
+}

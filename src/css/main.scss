@@ -1,49 +1,33 @@
 /*
 **---------------------------------
-***	Project: PSD Starter
-***	version: 0.1.1
-***	last modified: 2021.01.06
+***	Project: PSD Quickstart
+***	version: 0.0.5
+***	last modified: 2021.01.18
 ***	author: Pavel Sanchez
 ***	email: pavel@bluedot.dev
-***	website: http://bluedot.dev
+***	website: http://pavelsanchez.com
 **---------------------------------
-*/
-
-@charset 'UTF-8';
-
-/*
+***********************************
 **---------------------------------
 ***	 CSS TABLE OF CONTENTS
 ***--------------------------------
-***  1 - Reset
-***  2 - Fonts
-***  3 - Globals
-***  4 - Color Palette
-***  5 - Header
-***  6 - Body
-***  	6.1 - Sliders
-***  	6.2 - Imagery
-***  7 - Footer
+***  1 - Helpers
+***  2 - Base
+***  3 - Pages
 **---------------------------------
 */
 
 // 1. Configuration and helpers
 @import "1. helpers/_helpers-dir";
 
-// 2. Vendors
-@import "2. vendor/_vendor-dir";
-
 // 3. Base stuff
-@import "3. base/_base-dir";
+@import "2. base/_base-dir";
 
 // 4. Layout-related sections
-@import "4. layout/_layout-dir";
+@import "3. layout/_layout-dir";
 
 // 5. Components
-@import "5. components/_component-dir";
+@import "4. components/_component-dir";
 
 // 6. Page-specific styles
-@import "6. pages/_pages-dir";
-
-// 7. Themes
-@import "7. themes/_themes-dir";
+@import "5. pages/_pages-dir";
