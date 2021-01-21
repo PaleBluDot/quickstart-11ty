@@ -5,19 +5,8 @@ body {
   font-size: 1.8rem;
   color: var(--text-color);
   font-family: $text-fonts;
-  display: grid;
-  grid-template-rows: 10vh auto 10vh;
-  grid-template-areas:
-    "menu"
-    "main"
-    "footer";
-
-  @include bp(small) {
-    grid-template-rows: 6vh auto 10vh;
-  }
-  @include bp(medium) {
-    grid-template-rows: 6vh auto 10vh;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 body.light-mode {

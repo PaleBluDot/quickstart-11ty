@@ -4,13 +4,10 @@
     {% include "partials/head.njk" %}
   </head>
   <body>
+    {% include "components/announcement.njk" %}
     {% include "components/sidebar.njk" %}
     {% include "components/header.njk" %}
-
-    <main class="body">
-    {{ content | safe }}
-    </main>
-
+    {% include "components/main.njk" %}
     {% include "components/footer.njk" %}
   </body>
 </html>

@@ -1,0 +1,10 @@
+<main class="body">
+  {% if featImg %}
+  <section class="banner">
+    <img src="{{featImg}}" class="full-width" />
+  </section>
+  {% endif %}
+  <article class="main">
+  {{ content | safe }}
+  </article>
+</main>
