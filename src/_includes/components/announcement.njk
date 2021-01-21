@@ -1,0 +1,8 @@
+{% set announcement = config.announcement  %}
+
+{% if announcement.active == true %}
+<section id="announcementClose" class="announcement">
+  <p><i class="fas fa-info-circle"></i> {{ announcement.message }}. <a href="{{ announcement.url }}">Read more.</a></p>
+  <i class="fas fa-times-circle"></i>
+</section>
+{% endif %}

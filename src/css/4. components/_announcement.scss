@@ -1,0 +1,13 @@
+section.announcement {
+  --font-size: 1.2rem;
+
+  background: var(--primary);
+  font-size: var(--font-size);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin-bottom: 0;
+  }
+}

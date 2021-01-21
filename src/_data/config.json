@@ -21,5 +21,11 @@
   "repo": "https://github.com/PaleBluDot/quickstart.git",
   "title": "PSD Quickstart",
   "typeKit": "wey7hcg",
-  "url": "https://psd-boilerplate-11ty.netlify.app"
+  "url": "https://psd-boilerplate-11ty.netlify.app",
+  "announcement": {
+    "active": true,
+    "duration": "1000ms",
+    "message": "This is the announcement.",
+    "url": "https://psd.sh/home"
+  }
 }
