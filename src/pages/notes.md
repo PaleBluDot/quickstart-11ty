@@ -7,4 +7,11 @@ eleventyNavigation:
 
 <section class="content">
   <p>{{description}}</p>
+  <ol>
+  {%- for note in collections.notes -%}
+    <li>
+      <h4><a href="{{ note.url }}">{{ note.data.title }}</a></h4>
+    </li>
+  {%- endfor -%}
+  </ol>
 </section>

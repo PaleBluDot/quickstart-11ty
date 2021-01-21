@@ -2,11 +2,9 @@
 layout: "base"
 title: 11ty Boilerplate!
 description: A starting template using 11ty.
-featImg: /project52/wynwood-art-wall.jpg
+featImg: https://res.cloudinary.com/psd/image/upload/t_logomark/project52/wynwood-art-wall.jpg
 ---
 
-<article>
-<img src="{{cloudinary.logomarkUrl}}{{featImg}}" class="full-width" />
 <section class="content">
   <p>Whats included in this templates:</p>
   <ol>
@@ -17,4 +15,3 @@ featImg: /project52/wynwood-art-wall.jpg
   {%- endfor -%}
   </ol>
 </section>
-</article>

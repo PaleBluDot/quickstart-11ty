@@ -1,18 +1,8 @@
 ---
-title: Markdown
-description: This page explains how to use Markdown for syntax highlighting.
-eleventyNavigation:
-  key: Markdown
-  order: 3
+title: Config
+description: This is the page that explains how to config this project.
 ---
 
 <section class="content">
   <p>{{ description }}</p>
-
-```js
-myFunction () => {
-  return true;
-}
-```
-
 </section>
