@@ -2,7 +2,6 @@ console.log('e11ty Connected');
 
 let lightMode = localStorage.getItem('lightMode');
 let announcement = sessionStorage.getItem('announcement');
-
 const body = document.querySelector('body');
 const sidebar = document.querySelector('#sidebar');
 const darkIcon = document.querySelector('.dm-icon');
