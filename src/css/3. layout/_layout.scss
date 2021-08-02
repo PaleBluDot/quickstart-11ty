@@ -9,9 +9,20 @@ body {
   flex-direction: column;
 }
 
+.fa-moon {
+  display: none;
+}
+
 body.light-mode {
   --body-bg: #{$white};
   --menu-bg: #{$grey};
   --text-color: #{$black};
   --sun: #{$dark};
+
+  .fa-sun {
+    display: none;
+  }
+  .fa-moon {
+    display: block;
+  }
 }
