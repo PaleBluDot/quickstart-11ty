@@ -1,3 +1,11 @@
+.fa-moon {
+  display: none;
+}
+
+.dm-icon {
+  cursor: pointer;
+}
+
 body.light-mode {
   --body-bg: #{$white};
   --menu-bg: #{$grey};
@@ -10,12 +18,4 @@ body.light-mode {
   .fa-moon {
     display: block;
   }
-}
-
-.fa-moon {
-  display: none;
-}
-
-.dm-icon {
-  cursor: pointer;
 }
