@@ -1,15 +1,14 @@
 aside.sidebar {
   background: var(--menu-bg);
-  opacity: 0.97;
-  height: 10vh;
+  opacity: 0.98;
   width: 100vw;
   position: absolute;
   transform: translateY(-100vh);
 
   &.menu-open {
-    height: 90vh;
+    height: 96vh;
     position: absolute;
-    transform: translateY(10vh);
+    transform: translateY(4vh);
   }
 }
 
@@ -25,13 +24,10 @@ nav.menu {
   align-items: center;
   padding: 2rem;
   grid-area: menu;
+  height: 5vh;
 
   .page-title {
     margin-bottom: 0;
-  }
-
-  .dm-icon {
-    cursor: pointer;
   }
 }
 

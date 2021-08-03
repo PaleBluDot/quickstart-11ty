@@ -7,12 +7,20 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  background-color: var(--body-bg);
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-family: $text-fonts;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -59,8 +67,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-img {
+p {
   margin-bottom: 1.5rem;
 }
 

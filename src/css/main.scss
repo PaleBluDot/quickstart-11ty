@@ -12,22 +12,20 @@
 ***	 CSS TABLE OF CONTENTS
 ***--------------------------------
 ***  1 - Helpers
-***  2 - Base
+***  2 - Global
+***  3 - Components
 ***  3 - Pages
 **---------------------------------
 */
 
 // 1. Configuration and helpers
-@import "1. helpers/_helpers-dir";
+@import "Helpers/_helpers";
 
-// 3. Base stuff
-@import "2. base/_base-dir";
+// 2. Global styles
+@import "Globals/_globals";
 
-// 4. Layout-related sections
-@import "3. layout/_layout-dir";
+// 3. Components
+@import "Components/components";
 
-// 5. Components
-@import "4. components/_component-dir";
-
-// 6. Page-specific styles
-@import "5. pages/_pages-dir";
+// 4. Pages
+@import "Pages/pages";

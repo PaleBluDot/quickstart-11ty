@@ -17,7 +17,7 @@
     "parcel": "npm run parcel:css && npm run parcel:js",
     "parcel:css": "parcel build src/css/main.scss --out-dir build/css",
     "parcel:js": "parcel build src/js/*.js src/js/**/*.js --out-dir build/js",
-    "watch": "parcel watch src/js/**/*.js src/css/main.scss --out-dir build/ --no-source-maps --no-hmr",
+    "watch": "parcel watch src/js/**/*.js src/css/main.scss --out-dir build/",
     "clean": "rm -r build && rm -r .cache",
     "build": "cross-env ELEVENTY_ENV=prod eleventy && npm run parcel"
   },

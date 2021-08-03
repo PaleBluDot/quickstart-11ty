@@ -1,12 +1,12 @@
 # dependencies installed by npm
 /node_modules
+package-lock.json
 
 # build artifacts
+.cache
+.netlify
 /dist
 /build
-.netlify
-package-lock.json
-.cache
 
 # secrets and errors
 .env
