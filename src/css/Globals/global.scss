@@ -59,8 +59,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-img {
+p {
   margin-bottom: 1.5rem;
 }
 
@@ -78,22 +77,4 @@ body {
   font-family: $text-fonts;
   display: flex;
   flex-direction: column;
-}
-
-.fa-moon {
-  display: none;
-}
-
-body.light-mode {
-  --body-bg: #{$white};
-  --menu-bg: #{$grey};
-  --text-color: #{$black};
-  --sun: #{$dark};
-
-  .fa-sun {
-    display: none;
-  }
-  .fa-moon {
-    display: block;
-  }
 }

@@ -5,6 +5,4 @@ eleventyNavigation:
   key: Playground
 ---
 
-<section class="content">
-  <p>{{ description }}</p>
-</section>
+<p>{{ description }}</p>
